@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+$Verydarkdesaturatedblue: hsl(238, 29%, 16%)
+$Softred: hsl(14, 88%, 65%)
+$Verydarkgrayishblue: hsl(237, 12%, 33%)
+$Darkgrayishblue: hsl(240, 6%, 50%)
+$line: hsl(240, 5%, 91%)
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    height: 100vh
+    font-family: 'Kumbh Sans', sans-serif
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%))
+    display: grid
+    align-content: center
+    justify-content: center
+
+.container
+    border-radius: 20px
+    background-color: #fff
+    display: grid
+    grid-template-columns: 1fr 1fr
+    width: 1000px
+    height: 570px
+
+.images
+    background-image:url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg)
+    background-size: 100%, 190%
+    background-position: -80px 100px, -540px -240px
+    background-repeat: no-repeat
+
+.box
+    margin: 250px 0 0 -90px
+
+.texts
+    margin-top: 70px
+    line-height: 65px
+    h1
+        color: $Verydarkdesaturatedblue   
+
+.question
+    justify-content: space-between
+    margin-right: 90px
+    border-bottom: 1px solid $line
+    display: flex
+    
+    img
+        align-self: center
+        cursor: pointer
+
+
+.qa
+    h3
+        font-weight: 400
+        color: $Darkgrayishblue
+        font-size: 16px
+        cursor: pointer
+
+    h3:hover
+        color: $Softred
+
+.answer
+    max-width: 380px
+    line-height: 20px
+    font-size: 13px
+    margin-top: 10px
+    color: #aca9a9
+    display: none
+
+
+
+@media screen and (max-width:426px)
+
+    .container
+        display: block
+        margin-top: 50px
+        width: 363px
+        height: 530px
+
+    .images
+        height: 
+        background-image:url(images/illustration-woman-online-mobile.svg), url(images/bg-pattern-mobile.svg)
+        background-size: 240px
+        background-position: 0px 0px, 0px 110px
+        background-repeat: no-repeat
+        width: 300px
+        height: 300px
+        margin-left: 60px
+        margin-top: -105px
+
+    .box
+        margin: 0
+        display: none
+
+    .texts
+        font-weight: 400
+        line-height: 50px
+        margin-top: -50px
+        margin-left: 20px
+        margin-right: 20px
+        h1
+            text-align: center
+
+    .question
+        margin-right: 0px
+        h3
+            font-size: 14px
+    .answer
+        width: 280px
+   
